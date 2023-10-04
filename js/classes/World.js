@@ -30,7 +30,7 @@ export default class World {
     };
   }
 
-  addIsland(island) {
+  addIsland() {
     // add the islands to the DOM
     // add the islands to the array this.islands
     const islandElement = document.createElement("div");
@@ -38,6 +38,11 @@ export default class World {
 
     const coordinates = this.getCoordinates();
     islandElement.style.transform = `translate(${coordinates.x}px, ${coordinates.y}px)`;
+
+    //give the islands some random colors 
+    const island = new Island();
+    islandElement.style.backgroundColor = island.getRandomColor();
+    islandElement.innerHTML = island.getRandomName();
 
     document.body.appendChild(islandElement);
     this.islands.push(islandElement);
