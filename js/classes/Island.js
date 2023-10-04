@@ -1,13 +1,20 @@
+import World from './World.js';
+
 export default class Island {
-  constructor(name) {}
+  constructor(name) {
+    this.name = name;
+    this.color = this.getRandomColor();
+    this.element = this.createElement();
+  }
 
   getRandomColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   }
 
   remove() {
-    // JS animations api, fade out
-    // remove the element when the animation ended
+    // JS animations api, fade out the element
+    
+    // remove the element when the animation ended 
   }
 
   getRandomName() {
@@ -26,5 +33,7 @@ export default class Island {
     ];
 
     // return a random name from the array
+    return names[Math.floor(Math.random() * names.length)];
+    
   }
 }
