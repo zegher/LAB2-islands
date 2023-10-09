@@ -12,9 +12,13 @@ export default class Island {
   }
 
   remove() {
-    // JS animations api, fade out the element
-    
-    // remove the element when the animation ended 
+    //remove clicked island from array
+    const index = world.islands.indexOf(this);
+    if (index > -1) {
+      world.islands.splice(index, 1);
+    }
+    //remove clicked island from DOM
+    this.element.remove();
   }
 
   getRandomName() {

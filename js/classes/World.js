@@ -30,7 +30,9 @@ export default class World {
     // load json from localstorage
     const islandJSON = localStorage.getItem("islandJSON");
     // convert json string -> islands array
+
     const islandData = JSON.parse(islandJSON);
+
     // loop over the islands array and add them to the DOM
     islandData.forEach(island => {
       const islandElement = document.createElement("div");
@@ -70,9 +72,15 @@ export default class World {
 
     document.body.appendChild(islandElement);
     this.islands.push(islandElement);
+    //jflkqdfjlkdqss
   }
 
-  moveIsland(island) {
-    // this might be a good point to animate the islands with JS Animations API
+  moveIsland(){
+    console.log("moveIsland");
+  }
+
+  removeIsland(){
+    //remove specific island that's clicked on
+    console.log("removeIsland");
   }
 }
