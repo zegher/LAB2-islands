@@ -20,7 +20,28 @@ The table below tells us what the logical assignments do.
 
 | '??='    | 'x ??= y'  | 'x = x ?? (x = y)'   |
 
-
+<table>
+  <tr>
+    <th>Operator</th>
+    <th>Example</th>
+    <th>Same As</th>
+  </tr>
+  <tr>
+    <td>'&&='</td>
+    <td>'x &&= y'</td>
+    <td>'x = x && (x = y)'</td>
+  </tr>
+  <tr>
+    <td>'||='</td>
+    <td>'x ||= y'</td>
+    <td>'x = x || (x = y)'</td>
+  </tr>
+  <tr>
+    <td>'??='</td>
+    <td>'x ??= y'</td>
+    <td>'x = x ?? (x = y)'</td>
+  </tr>
+</table>
 ----------------------------
 
 <strong>The Logical OR assignment operator</strong>
