@@ -13,8 +13,11 @@ The table below tells us what the logical assignments do.
 
 | Operator | Example    | Same As               |
 |----------|------------|-----------------------|
+
 | '&&='    | 'x &&= y'  | 'x = x && (x = y)'   |
+
 | '||='    | 'x ||= y'  | 'x = x || (x = y)'   |
+
 | '??='    | 'x ??= y'  | 'x = x ?? (x = y)'   |
 
 
