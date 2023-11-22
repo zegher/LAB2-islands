@@ -14,21 +14,25 @@ The table below tells us what the logical assignments do.
 
 <table>
   <tr>
+    <th>Name</th>
     <th>Operator</th>
     <th>Example</th>
     <th>Same As</th>
   </tr>
   <tr>
+    <td>AND</td>
     <td>&&=</td>
     <td>x &&= y</td>
     <td>x = x && (x = y)</td>
   </tr>
   <tr>
+    <td>OR</td>
     <td>||=</td>
     <td>x ||= y</td>
     <td>x = x || (x = y)</td>
   </tr>
   <tr>
+    <td>nullish coalescing</td>
     <td>??=</td>
     <td>x ??= y</td>
     <td>x = x ?? (x = y)</td>
