@@ -11,14 +11,6 @@ These logical assignments include:
 
 The table below tells us what the logical assignments do.
 
-| Operator | Example    | Same As               |
-|----------|------------|-----------------------|
-
-| '&&='    | 'x &&= y'  | 'x = x && (x = y)'   |
-
-| '||='    | 'x ||= y'  | 'x = x || (x = y)'   |
-
-| '??='    | 'x ??= y'  | 'x = x ?? (x = y)'   |
 
 <table>
   <tr>
@@ -27,21 +19,23 @@ The table below tells us what the logical assignments do.
     <th>Same As</th>
   </tr>
   <tr>
-    <td>'&&='</td>
-    <td>'x &&= y'</td>
-    <td>'x = x && (x = y)'</td>
+    <td>&&=</td>
+    <td>x &&= y</td>
+    <td>x = x && (x = y)</td>
   </tr>
   <tr>
-    <td>'||='</td>
-    <td>'x ||= y'</td>
-    <td>'x = x || (x = y)'</td>
+    <td>||=</td>
+    <td>x ||= y</td>
+    <td>x = x || (x = y)</td>
   </tr>
   <tr>
-    <td>'??='</td>
-    <td>'x ??= y'</td>
-    <td>'x = x ?? (x = y)'</td>
+    <td>??=</td>
+    <td>x ??= y</td>
+    <td>x = x ?? (x = y)</td>
   </tr>
 </table>
+
+
 ----------------------------
 
 <strong>The Logical OR assignment operator</strong>
